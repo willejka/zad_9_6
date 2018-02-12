@@ -1,11 +1,16 @@
 //scripts.js
-    var add = document.getElementById('addElem');
-    var list = document.getElementById('list');
-    var listLength = 0;
+    $(function(){
+	console.log('DOM loaded - you can have fun');
+});
+    $("span:even").css('color', 'red');
 
-    add.addEventListener('click', function() {
-        listLength++;
-        var element = document.createElement('li');
-        element.innerHTML = "item " + listLength;
-        list.appendChild(element);
-    });
+    var paragraphs = $('p');
+paragraphs.each(function(index, element) {
+
+    var button = '<button class="btn" data-tmp="' + index + '">Click me</button>'
+    $(element).append(button)
+
+});
+$("button").click(function(){
+	alert($(this).attr("data-tmp"));
+});
