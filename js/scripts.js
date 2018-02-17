@@ -1,16 +1,19 @@
 //scripts.js
-    $(function(){
-	console.log('DOM loaded - you can have fun');
-});
-    $("span:even").css('color', 'red');
+$(function(){
+  //this code will execute after the DOM is loaded
+  var carouselList = $("#carousel ul");
+      
+  setInterval(changeSlides,3000);
+  
+  function changeSlides(){
+    carouselList.animate({marginLeft:-500}, 500, moveFirstSlide);
+  }
+  
+   function moveFirstSlide(){
+   	var firstItem = carouselList.find("li:first");
+   	var lastItem = carouselList.find("li:last");
 
-    var paragraphs = $('p');
-paragraphs.each(function(index, element) {
-
-    var button = '<button class="btn" data-tmp="' + index + '">Click me</button>'
-    $(element).append(button)
-
-});
-$("button").click(function(){
-	alert($(this).attr("data-tmp"));
+   	lastItem.after(firstItem);
+    carouselList.css({marginLeft:0});
+  };
 });
