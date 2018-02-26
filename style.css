@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	margin: 0;
+	background-color: #fff;
+	font-family: 'Lato', sans-serif;
+}
+.board {
+	height: 100px;
+	padding: 20px;
+}
+.create-column {
+	display: block;
+	width: 250px;
+	color: #000;
+	padding:5px 20px;
+	font-size: 20px;
+	cursor: pointer;
+	margin: 30px auto;
+	border-radius: 15px;
+	background-color: #33d671;
+}
+.column-title {
+	display: inline-block;
+}
+.column {
+    float: left;
+	margin: 20px;
+	padding: 20px;
+	background-color: #33d671;
+	border-radius: 15px;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.btn-center {
+	margin-left: 50%;
+	margin-bottom: 30px;
+	transform: translateX(-50%);
+}
+.btn-add {
+	background-color: #e01fa9; 
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 15px;
+}
+.column-card-list, ul {
+	min-height: 200px;
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+}
+.btn-delete {
+	float: right;
+	background: transparent;
+	border: 2px solid black;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 10px 5px 0 5px;
+	color: #000;
+	cursor: pointer;
+	font-size: 20px;
+}
+li {
+	list-style-type: none;
+	margin-top: 20px;
+}
+h1 {
+	text-align: center;
+    color: #000;
+}
+.card-description {
+	padding: 15px;
+	background: #187fc9;
+	cursor: pointer;
+	font-size: 20px;
+	color: #000;
+	border-radius: 15px;
+}
+.add-card {
+	margin-left: 10px;
+	color: black;
+	padding: 10px 20px;
+	cursor: pointer;
+	background-color: #187fc9;
+	border: none;
+	border-radius: 15px;
+}
